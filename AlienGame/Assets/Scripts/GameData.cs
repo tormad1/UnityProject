@@ -11,34 +11,27 @@ public class GameData : MonoBehaviour
     public float volume;
     public float sensitivity;
 
-    
-    public GameObject volumeSlider;
-    private Slider vSlider;
-
-    public GameObject sensitivitySlider;
-    private Slider sSlider;
     void Awake()
     {
         audioSource=GetComponent<AudioSource>();
-        vSlider = volumeSlider.GetComponent<Slider>();
-        sSlider = volumeSlider.GetComponent<Slider>();
         volume = audioSource.volume;
         DontDestroyOnLoad(gameObject);
+
+    }
+
+    void Update()
+    {
+        SetVolume();
+        SetSesnsitivity();
     }
 
     public void SetVolume()
     {
-        volume = vSlider.value;
         audioSource.volume = volume;
-
     }
 
     public void SetSesnsitivity()
     {
-        sensitivity = sSlider.value;
     }
-    void Update()
-    {
-        
-    }
+
 }
