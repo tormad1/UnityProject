@@ -123,6 +123,19 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &38279620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2301972469129291886, guid: b92088922de12964592ccb903390bd09, type: 3}
+  m_PrefabInstance: {fileID: 6030168273991045798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &38279621
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38279620}
+  m_Enabled: 1
 --- !u!1 &131170163
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,8 +371,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -71.2903, y: -34.908}
-  m_SizeDelta: {x: 91.005, y: 36.6161}
+  m_AnchoredPosition: {x: -226, y: -134}
+  m_SizeDelta: {x: 288.9781, y: 134.1248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552970872
 MonoBehaviour:
@@ -383,7 +396,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7830189, g: 0.2696244, b: 0.2696244, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -552,8 +565,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 88
+  m_fontSizeBase: 88
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -716,8 +729,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -238, y: -134}
-  m_SizeDelta: {x: 166.71, y: 69.0302}
+  m_AnchoredPosition: {x: -1077, y: -524}
+  m_SizeDelta: {x: 775.4031, y: 258.1388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1352890371
 MonoBehaviour:
@@ -753,7 +766,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.764151, g: 0.24870951, b: 0.24870951, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -980,8 +993,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1086,8 +1099,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2862658420851418806, guid: b92088922de12964592ccb903390bd09, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862658420851418806, guid: b92088922de12964592ccb903390bd09, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d7992b43c159b740a6809e9270d8708, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2301972469129291886, guid: b92088922de12964592ccb903390bd09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 38279621}
   m_SourcePrefab: {fileID: 100100000, guid: b92088922de12964592ccb903390bd09, type: 3}

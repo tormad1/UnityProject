@@ -10,12 +10,19 @@ public class GameData : MonoBehaviour
 
     public float volume;
     public float sensitivity;
-
+    public static GameObject instance =null;
     void Awake()
     {
-        audioSource=GetComponent<AudioSource>();
-        volume = audioSource.volume;
-        DontDestroyOnLoad(gameObject);
+        if (instance != null)
+        { Destroy(gameObject); }
+        else
+        {
+            instance = gameObject;
+            audioSource = GetComponent<AudioSource>();
+            volume = audioSource.volume;
+            DontDestroyOnLoad(gameObject);
+        }
+        
 
     }
 
